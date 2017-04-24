@@ -8,9 +8,7 @@ var af = require('../UpWorkAngulartest/advancedfilter.js');
 
 describe("upwork page input",function() {
  beforeEach(function() {
-	//browser.ignoreSynchronization = true;
-	 //browser.waitForAngular();
-	 //browser.sleep(500);
+
 	 browser.refresh;
 	browser.get('https://www.upwork.com/');
 	browser.driver.manage().window().maximize();
@@ -24,6 +22,8 @@ it('search input UX Designer', function() {
 
 it('advanced search filter'), function() {
 	af.advanced();
+	af.clicknine();
+	af.clickmoney();
 };
 
 });
